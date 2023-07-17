@@ -1,0 +1,7 @@
+en:
+  static_pages:
+    home:
+      heading: "Welcome to the Sample App"
+      content_html: "This is the homepage for the %{tutorial_link} sample application."
+      sign_up: "Sign up now!"
+      tutorial_link: "Ruby on Rails Tutorial"

@@ -1,0 +1,9 @@
+en:
+  layouts:
+    footer:
+      sentence_html: "The %{tutorial_link} by %{author_link}"
+      tutorial_link: "Ruby on Rails Tutorial"
+      author_link: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"

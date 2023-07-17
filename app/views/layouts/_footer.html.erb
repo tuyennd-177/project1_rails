@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t(".sentence_html", 
+        tutorial_link: link_to(t(".tutorial_link"), "https://www.railstutorial.org/"), 
+        author_link: link_to(t(".author_link"), "https://www.michaelhartl.com/"))
+    %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), "#" %></li>
+      <li><%= link_to t(".contact"), "#" %></li>
+      <li><%= link_to t(".news"), "https://news.railstutorial.org/" %></li>
+    </ul>
+  </nav>
+</footer>

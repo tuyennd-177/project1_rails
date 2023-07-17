@@ -1,0 +1,9 @@
+vi:
+  layouts:
+    footer:
+      sentence_html: "Bài %{tutorial_link} viết bởi %{author_link}"
+      tutorial_link: "hướng dẫn Ruby on Rails"
+      author_link: "Michael Hartl"
+      about: "Về chúng tôi"
+      contact: "Liên hệ"
+      news: "Tin tức"

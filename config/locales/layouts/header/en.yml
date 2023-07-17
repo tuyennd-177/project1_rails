@@ -1,0 +1,9 @@
+en:
+  layouts:
+    header:
+      logo: Sample App
+      home: Home
+      help: Help
+      log_in: Log in
+      english: English
+      vietnamese: Vietnameses

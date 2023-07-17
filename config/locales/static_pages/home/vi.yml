@@ -1,0 +1,7 @@
+vi:
+  static_pages:
+    home:
+      heading: "Chào mừng đến với Ứng dụng đơn giản"
+      content_html: "Đây là trang chủ của %{tutorial_link} ứng dụng đơn giản."
+      sign_up: "Đăng ký ngay!"
+      tutorial_link: "hướng dẫn Ruby on Rails"

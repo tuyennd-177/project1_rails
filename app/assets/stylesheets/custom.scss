@@ -1,6 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$color-gray: #777;
+$color-gray_b: #555;
+$color-black_l: #222;
+$color-white: #fff;
+$color-white_l: #eaeaea;
+$colot-white_b: #bbb;
+$color-red: red;
+
 /* universal */
 body {
   padding-top: 60px;
@@ -22,8 +30,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-/* typography */
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   line-height: 1;
 }
 
@@ -40,7 +47,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $color-gray;
 }
 
 p {
@@ -48,12 +55,11 @@ p {
   line-height: 1.7em;
 }
 
-/* header */
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -61,7 +67,7 @@ p {
 }
 
 #logo:hover {
-  color: #fff;
+  color: $color-white;
   text-decoration: none;
 }
 
@@ -69,17 +75,17 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: 1px solid $color-white_l;
+  color: $color-gray;
 }
 
 footer a {
-  color: #555;
+  color: $color-gray_b;
 }
 
-// footer a:hover {
-//   color: #222;
-// }
+footer a:hover {
+  color: $color-black_l;
+}
 
 footer small {
   float: left;
@@ -93,4 +99,197 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+/* sidebar */
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+  display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
+}
+
+/* mixins, variables, etc. */
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* miscellaneous */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid $colot-white_b;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: $color-red;
+  ul {
+    color: $color-red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-bottom: 10px;
+  margin-top: 10px;
+    span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+ #session_remember_me {
+  margin-left: 0;
+  width: auto;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+aside {
+  textarea {
+  height: 100px;
+  margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+  border: 0;
+  }
+}
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+  padding: 10px 0;
+  border-top: 1px solid #e8e8e8;
+  }
+  .user {
+  margin-top: 5em;
+  padding-top: 0;
+  }
+  .gravatar {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  }
+}
+
+.microposts {
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+    display: block;
+    padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
 }

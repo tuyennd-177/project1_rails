@@ -1,0 +1,4 @@
+vi:
+  shared:
+    error_messages:
+      count_error: Chứa %{count} lỗi

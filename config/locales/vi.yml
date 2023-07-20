@@ -1,0 +1,10 @@
+vi:
+  activerecord:
+    models:
+      user: Người dùng
+    attributes:
+      user:
+        name: Tên
+        password: Mật khẩu
+        password_confirmation: Xác nhận mật khẩu
+        email: Địa chỉ email

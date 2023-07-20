@@ -1,0 +1,8 @@
+vi:
+  users:
+    new:
+      title: "Đăng ký"
+      submit: "Tạo tài khoản của tôi"
+    create:
+      success: "Tạo tài khoản thành công"
+      failed: "Tạo tài khoản thất bại"

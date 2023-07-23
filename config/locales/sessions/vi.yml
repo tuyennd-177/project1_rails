@@ -1,0 +1,8 @@
+vi:
+  sessions:
+    new:
+      log_in: Đăng nhập
+      new_user: "Người dùng mới? "
+      sign_up_now: Đăng ký ngay!
+    create:
+      invalid_email_password: "Địa chỉ email hoặc mật khẩu không hợp lệ!"

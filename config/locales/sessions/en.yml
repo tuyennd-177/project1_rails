@@ -1,0 +1,8 @@
+en:
+  sessions:
+    new:
+      log_in: Log in
+      new_user: "New user? " 
+      sign_up_now: Sign up now!
+    create:
+      invalid_email_password: "Invalid email or password!"

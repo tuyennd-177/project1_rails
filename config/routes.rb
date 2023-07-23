@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   scope '(:locale)', locale: /en|vi/ do
     root 'static_pages#home'
+
     get '/help', to: 'static_pages#help'
-    resources :users, only: %i[new create show]
+
+    resources :users
+
+    get '/signup', to: 'users#new'
+    post '/signup', to: 'users#create'
+
+    get '/login', to: 'sessions#new'
+    post '/login', to: 'sessions#create'
+    delete '/logout', to: 'sessions#destroy'
   end
 end
